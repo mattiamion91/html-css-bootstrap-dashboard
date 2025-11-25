@@ -14,13 +14,18 @@
 
     <header>
         <!--navbar con logo, lista link, search bar @@@ in moblie e tablet la searchbar si nasconde-->
-        <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="./imgs/duck.png" alt="ducklogo" width="32" height="32">
+                    <img src="./imgs/duck.png" alt="ducklogo" width="40" height="40">
                 </a>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link" href="#">Catalogo Libri</a>
                         </li>
@@ -34,6 +39,10 @@
                             <a class="nav-link" href="#">Help</a>
                         </li>
                     </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Cerca..." aria-label="Search" />
+                        <button class="btn btn-outline-secondary" type="submit">Cerca</button>
+                    </form>
                 </div>
             </div>
         </nav>
